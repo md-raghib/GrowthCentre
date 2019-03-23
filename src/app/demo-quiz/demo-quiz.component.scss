@@ -1,0 +1,43 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 40%;
+    
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+ul{
+    width:50%;
+    margin-left: 800px;
+}
+li{
+    width: 50%;
+    padding: 2px;
+}
+a{
+  text-align: center;
+}
+.question{
+  border: 1px solid ;
+  border-color: #7700FF;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 250px;
+  height: 300px;
+}
+
+form{
+  padding: 70px;
+  margin-left: 80px;
+}
+
+

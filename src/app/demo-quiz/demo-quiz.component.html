@@ -1,0 +1,27 @@
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+<!-- <div *ngFor = "let q of q |paginate : { itemsPerPage : 1 , currentPage : p };">
+  <h4>Q{{q.id}}</h4>{{q.ques}}<br>
+  {{q.ans1}}<br>
+  {{q.ans2}}<br>
+  {{q.ans3}}<br>
+</div>
+-->
+<div class="container mt-3" style="padding:20px;" *ngFor = "let q of q |paginate : { itemsPerPage : 1 , currentPage : p };">
+  <p><strong>Q{{q.id}}:</strong> {{q.ques}}</p><br>
+  <div class="form-check">
+      <label class="form-check-label" for="radio1">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >{{q.ans1}}
+      </label>
+    </div><br><br>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">{{q.ans2}}
+      </label>
+    </div><br><br>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optradio" >{{q.ans3}}
+      </label>
+    </div>
